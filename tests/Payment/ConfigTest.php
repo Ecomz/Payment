@@ -35,7 +35,7 @@ class ConfigTest extends \PHPUnit_Framework_TestCase{
 
 	/**
 	* @expectedException Ecomz\Payment\Exception
-	* @expectedExceptionMessage Config File Not Found
+	* @expectedExceptionMessage File Not Found
 	*/	
 	public function testLoadFromFileNotValidFile()
 	{
@@ -45,7 +45,7 @@ class ConfigTest extends \PHPUnit_Framework_TestCase{
 
 	/**
 	* @expectedException Ecomz\Payment\Exception
-	* @expectedExceptionMessage Config $env Not Found
+	* @expectedExceptionMessage File Env:[OTHER2] Not Found
 	*/	
 	public function testLoadFromFileNotValidEnvironment()
 	{

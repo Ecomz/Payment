@@ -25,9 +25,9 @@ class Container
 				$config->fromArray($configuration[$env]);
 				return $config;
 			}
-			throw new Exception("Config \$env Not Found");
+			throw new Exception("File Env:[$env] Not Found");
 		}
-		throw new Exception("Config File Not Found");
+		throw new Exception("File Not Found");
 	}
 	public function fromArray(array $config)
 	{
