@@ -8,8 +8,6 @@ abstract class Provider{
 	{
 		if (!$this->validateResource($request))
 			throw new \Ecomz\Payment\Exception("Invalid Request for {$request->get('PROVIDER')}", 1);
-			
-
 	}
 	protected function validateResource(Container $request)
 	{
@@ -18,6 +16,8 @@ abstract class Provider{
 	protected function hasMethod($method)
 	{
 		$from =explode('\\',get_called_class());
-		var_dump($from);
+        array_pop($from);
+        $method = implode('\\',$from)."\\{$method}Method";
+        return class_exists($method);
 	}
 }

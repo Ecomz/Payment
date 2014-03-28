@@ -19,7 +19,7 @@ class ConfigTest extends \PHPUnit_Framework_TestCase{
 	public function testLoadFromFileTest()
 	{
 		$expected = array('nome'=> 'ivo', 'sobrenome'=> 'nascimento');
-		$file = __DIR__."/../resources/confitests.php";
+		$file = __DIR__."/../../resources/confitests.php";
 		$config = Config::fromFile($file, 'TEST');
 		$this->AssertEquals($expected['nome'], $config->get('nome'));
 		$this->AssertEquals($expected['sobrenome'], $config->get('sobrenome'));
@@ -27,7 +27,7 @@ class ConfigTest extends \PHPUnit_Framework_TestCase{
 	public function testLoadFromFileOther()
 	{
 		$expected = array('nome'=> 'andre', 'sobrenome'=> 'nascimento');
-		$file = __DIR__."/../resources/confitests.php";
+		$file = __DIR__."/../../resources/confitests.php";
 		$config = Config::fromFile($file, 'OTHER');
 		$this->AssertEquals($expected['nome'], $config->get('nome'));
 		$this->AssertEquals($expected['sobrenome'], $config->get('sobrenome'));
@@ -39,7 +39,7 @@ class ConfigTest extends \PHPUnit_Framework_TestCase{
 	*/	
 	public function testLoadFromFileNotValidFile()
 	{
-		$file = __DIR__."/../resources/invalidconfig.php";
+		$file = __DIR__."/../../resources/invalidconfig.php";
 		$config = Config::fromFile($file, 'OTHER');
 	}
 
@@ -49,7 +49,7 @@ class ConfigTest extends \PHPUnit_Framework_TestCase{
 	*/	
 	public function testLoadFromFileNotValidEnvironment()
 	{
-		$file = __DIR__."/../resources/confitests.php";
+		$file = __DIR__."/../../resources/confitests.php";
 		$config = Config::fromFile($file, 'OTHER2');
 	}
 
