@@ -9,7 +9,7 @@ abstract class Provider{
 		if (!$this->validateResource($request))
 			throw new \Ecomz\Payment\Exception("Invalid Request for {$request->get('PROVIDER')}", 1);
 	}
-	protected function validateResource(Container $request)
+	public function validateResource(Container $request)
 	{
 		return ($this->hasMethod($request->get('METHOD')));
 	}

@@ -5,7 +5,7 @@ use Ecomz\Payment\Container as Container;
 
 class Provider extends \Ecomz\Payment\Provider\Provider{
 
-	protected function validateResource(Container $request)
+	public function validateResource(Container $request)
 	{
 		return parent::validateResource($request);
 	}
