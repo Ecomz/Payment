@@ -1,7 +1,7 @@
 Payment
 =======
 
-[![Build Status](https://secure.travis-ci.org/Ecomz/Payment.png)]
+![Build Status](https://secure.travis-ci.org/Ecomz/Payment.png)
 
 **version**:__0.0.2__
 
