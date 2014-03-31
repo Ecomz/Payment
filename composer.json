@@ -5,7 +5,8 @@
     "authors": [
         {
             "name": "Ivo Nascimento",
-            "email": "iannsp@gmail.com"
+            "email": "iannsp@gmail.com",
+            "homepage": "http://ivonascimento.wordpress.com"
         }
     ],
     "require": {
@@ -18,5 +19,5 @@
         "phpunit/phpunit": "3.7.*",
         "phpunit/phpunit-selenium": ">=1.2"
     },
-     " license": "MIT"
+     " license": ["MIT"]
 }
