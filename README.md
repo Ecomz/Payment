@@ -1,7 +1,10 @@
 Payment
 =======
 
+[![Build Status](https://secure.travis-ci.org/Ecomz/Payment.png)]
+
 **version**:__0.0.2__
+
 
 **Payment** is a Bundle for perform Payments as an independent action of which platform you are run
 
